@@ -2,7 +2,7 @@
 
 namespace AppDemo.Controllers
 {
-    public class HomeController : Controller
+    public class CartController : Controller
     {
         public IActionResult Index()
         {

@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Fruitables - Vegetable Website Template</title>
+    <title>@ViewData["Title"]</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -61,7 +61,7 @@
                     <div class="navbar-nav mx-auto">
                         <a href="@Url.Action("Index", "Home")" class="nav-item nav-link active">Home</a>
                         <a href="@Url.Action("Index", "Shop")" class="nav-item nav-link">Shop</a>
-                        <a href="shop-detail.html" class="nav-item nav-link">Shop Detail</a>
+                        <a href="@Url.Action("Index", "Product")" class="nav-item nav-link">Shop Detail</a>
                         <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
                             <div class="dropdown-menu m-0 bg-secondary rounded-0">
@@ -88,7 +88,7 @@
         </div>
     </div>
     <!-- Navbar End -->
-    @RenderBody()
+        @RenderBody()
     <!-- Footer Start -->
     <div class="container-fluid bg-dark text-white-50 footer pt-5 mt-5">
         <div class="container py-5">
@@ -156,7 +156,7 @@
                         <p>Email: Example@gmail.com</p>
                         <p>Phone: +0123 4567 8910</p>
                         <p>Payment Accepted</p>
-                        <img src="~/img/payment.png" class="img-fluid" alt="">
+                        <img src="img/payment.png" class="img-fluid" alt="">
                     </div>
                 </div>
             </div>
