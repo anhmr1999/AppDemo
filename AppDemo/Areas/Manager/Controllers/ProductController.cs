@@ -1,8 +1,9 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
-namespace AppDemo.Controllers
+namespace AppDemo.Areas.Manager.Controllers
 {
-    public class HomeController : Controller
+    [Area("Manager")]
+    public class ProductController : Controller
     {
         public IActionResult Index()
         {
